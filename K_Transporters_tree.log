@@ -1,0 +1,152 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Nov 30 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    lko (AVX2, FMA3, 2 GB RAM)
+Command: iqtree2 -s KTransporter_MAFFT.fasta -st AA -m LG+F+R5 -B 1000 -pre K_Transporters_tree
+Seed:    173996 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Sep 27 18:32:00 2026
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file KTransporter_MAFFT.fasta ... Fasta format detected
+Alignment most likely contains protein sequences
+Alignment has 39 sequences with 1051 columns, 986 distinct patterns
+757 parsimony-informative, 155 singleton sites, 139 constant sites
+             Gap/Ambiguity  Composition  p-value
+   1  HAK5_ARATH    25.31%    passed     20.39%
+   2  KT1_ARATH     32.25%    passed     24.74%
+   3  KT9_ARATH     33.30%    passed     71.87%
+   4  KT10_ARATH    24.64%    passed     99.74%
+   5  KT12_ARATH    21.31%    passed     85.39%
+   6  KT2_ARATH     24.45%    passed     92.31%
+   7  KT5_ARATH     18.65%    passed     45.42%
+   8  KT6_ARATH     25.59%    passed     85.93%
+   9  KT7_ARATH     30.64%    passed     92.19%
+  10  KT8_ARATH     25.69%    passed     97.07%
+  11  KUP3_ARATH    24.93%    passed     99.54%
+  12  KUP4_ARATH    26.26%    passed     64.10%
+  13  HAK1_ORYSA    24.64%    passed     90.37%
+  14  HAK10_ORYSA   19.79%    failed      4.34%
+  15  HAK11_ORYSA   24.74%    passed     87.51%
+  16  HAK12_ORYSA   24.55%    passed     59.13%
+  17  HAK13_ORYSA   25.98%    passed      8.61%
+  18  HAK14_ORYSA   18.27%    passed     12.23%
+  19  HAK15_ORYSA   17.51%    passed     23.06%
+  20  HAK16_ORYSA   22.84%    passed     68.75%
+  21  HAK17_ORYSA   32.73%    passed     90.60%
+  22  HAK18_ORYSA   24.55%    passed     90.33%
+  23  HAK19_ORYSA   29.40%    passed     44.02%
+  24  HAK2_ORYSA    25.50%    passed     86.38%
+  25  HAK20_ORYSA   28.92%    passed     55.45%
+  26  HAK21_ORYSA   23.98%    passed     21.59%
+  27  HAK22_ORYSA   18.17%    failed      0.00%
+  28  HAK23_ORYSA   16.56%    passed     27.27%
+  29  HAK3_ORYSA    23.12%    passed      9.92%
+  30  HAK4_ORYSA    33.68%    passed     79.22%
+  31  HAK5_ORYSA    25.69%    passed     26.14%
+  32  HAK6_ORYSA    28.83%    passed     57.57%
+  33  HAK7_ORYSA    22.84%    passed     99.74%
+  34  HAK8_ORYSA    24.55%    passed     83.06%
+  35  HAK9_ORYSA    25.02%    passed     85.24%
+  36  HAK1_PHYPA    21.79%    passed     98.81%
+  37  HAK2_PHYPA    21.50%    passed     44.73%
+  38  HAK3_PHYPA    21.98%    passed     72.11%
+  39  HAK4_PHYPA    22.07%    passed     47.94%
+****  TOTAL         24.67%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.063 seconds
+Generating 1000 samples for ultrafast bootstrap (seed: 173996)...
+
+NOTE: 34 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -40750.141
+2. Current log-likelihood: -40045.578
+3. Current log-likelihood: -40023.721
+4. Current log-likelihood: -40016.501
+5. Current log-likelihood: -40013.422
+6. Current log-likelihood: -40012.258
+7. Current log-likelihood: -40011.805
+8. Current log-likelihood: -40011.607
+Optimal log-likelihood: -40011.519
+Site proportion and rates:  (0.123,0.059) (0.279,0.264) (0.212,0.679) (0.280,1.477) (0.106,3.410)
+Parameters optimization took 8 rounds (16.260 sec)
+Computing ML distances based on estimated model parameters... 0.318 sec
+Computing BIONJ tree...
+0.014 seconds
+Log-likelihood of BIONJ tree: -40015.948
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.683 second
+Computing log-likelihood of 98 initial trees ... 16.894 seconds
+Current best score: -40011.519
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -39997.122
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -39986.161
+Iteration 10 / LogL: -39997.931 / Time: 0h:1m:3s
+Iteration 20 / LogL: -39989.519 / Time: 0h:1m:34s
+Finish initializing candidate tree set (4)
+Current best tree score: -39986.161 / CPU time: 76.229
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -39985.212
+Iteration 30 / LogL: -39987.477 / Time: 0h:2m:14s (0h:5m:34s left)
+Iteration 40 / LogL: -39998.878 / Time: 0h:2m:41s (0h:4m:15s left)
+Iteration 50 / LogL: -39986.353 / Time: 0h:3m:9s (0h:3m:20s left)
+Log-likelihood cutoff on original alignment: -40030.603
+Iteration 60 / LogL: -39987.548 / Time: 0h:3m:36s (0h:2m:34s left)
+Iteration 70 / LogL: -39986.249 / Time: 0h:4m:6s (0h:1m:54s left)
+Iteration 80 / LogL: -39987.175 / Time: 0h:4m:37s (0h:1m:17s left)
+Iteration 90 / LogL: -39997.194 / Time: 0h:5m:3s (0h:0m:40s left)
+Iteration 100 / LogL: -39985.432 / Time: 0h:5m:32s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -40030.603
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:5m:40s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -39985.212
+Optimal log-likelihood: -39985.211
+Site proportion and rates:  (0.126,0.061) (0.286,0.271) (0.217,0.708) (0.275,1.525) (0.096,3.566)
+Parameters optimization took 1 rounds (0.796 sec)
+BEST SCORE FOUND : -39985.211
+Creating bootstrap support values...
+Split supports printed to NEXUS file K_Transporters_tree.splits.nex
+Total tree length: 22.021
+
+Total number of iterations: 103
+CPU time used for tree search: 320.866 sec (0h:5m:20s)
+Wall-clock time used for tree search: 322.262 sec (0h:5m:22s)
+Total CPU time used: 340.116 sec (0h:5m:40s)
+Total wall-clock time used: 342.031 sec (0h:5m:42s)
+
+Computing bootstrap consensus tree...
+Reading input file K_Transporters_tree.splits.nex...
+39 taxa and 119 splits.
+Consensus tree written to K_Transporters_tree.contree
+Reading input trees file K_Transporters_tree.contree
+Log-likelihood of consensus tree: -39985.211
+
+Analysis results written to: 
+  IQ-TREE report:                K_Transporters_tree.iqtree
+  Maximum-likelihood tree:       K_Transporters_tree.treefile
+  Likelihood distances:          K_Transporters_tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          K_Transporters_tree.splits.nex
+  Consensus tree:                K_Transporters_tree.contree
+  Screen log file:               K_Transporters_tree.log
+
+Date and Time: Sun Sep 27 18:37:44 2026
