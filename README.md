@@ -1,4 +1,0 @@
-Análisis filogenético comparativo de la familia de transportadores HAK/KUP/KT en plantas
-En este repositirio se busca dilusidar la historia de divergencia de la familia de transportadores de potasio esto mediante tres especies basándonos únicamente en secuencias proteicas encontradas en el NCBI ya que en trabajos anteriores se ha realizado con secuencias de ADN y lo que se busca en encontrar una relacion desde otro punto de vista
-satguni@lko:~/taller_cd$ cat *.fasta > archivo_combinado.fasta 
-
